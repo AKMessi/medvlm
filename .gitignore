@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Training artifacts
+outputs/
+checkpoints/
+wandb/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+model.zip
+best_model.zip
+validation_predictions.csv
+assets/patient_examples/
+assets/results/patient_derived/
+
+# Data
+data/
+kaggle/
+*.dcm
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

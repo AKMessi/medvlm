@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "MedVLM: Chest X-Ray Report Generation"
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Kakad
+    given-names: Aaryan
+repository-code: "https://github.com/AKMessi/medvlm"
+url: "https://github.com/AKMessi/medvlm"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-05-31

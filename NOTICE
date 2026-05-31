@@ -1,0 +1,17 @@
+MedVLM
+Copyright 2026 Aaryan Kakad
+
+This product includes software developed by Aaryan Kakad and distributed
+under the Apache License, Version 2.0.
+
+Repository: https://github.com/AKMessi/medvlm
+
+Dataset notice:
+The training notebook and scripts reference the Indiana University Chest
+X-ray Collection / Open-i dataset. Dataset files, radiology reports, X-ray
+images, and dataset-derived patient examples are not licensed under this
+repository's Apache-2.0 software license.
+
+The IU/Open-i chest X-ray data is distributed under Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
+Users must obtain and use the dataset under its original terms.

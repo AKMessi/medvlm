@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medvlm-iu-xray"
+version = "0.1.0"
+description = "Hybrid CNN-Transformer vision-language model for IU X-Ray report generation."
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Aaryan Kakad" },
+]
+maintainers = [
+  { name = "Aaryan Kakad" },
+]
+keywords = ["medical-imaging", "vision-language-model", "chest-xray", "radiology", "pytorch"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.4",
+  "torchvision>=0.19",
+  "monai>=1.3",
+  "tiktoken>=0.7",
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "einops>=0.7",
+  "matplotlib>=3.8",
+  "pillow>=10.0",
+  "tqdm>=4.66",
+  "torchmetrics>=1.4",
+  "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+app = ["gradio>=5.0"]
+dev = ["pytest>=8.0", "ruff>=0.8"]
+
+[project.urls]
+Homepage = "https://github.com/AKMessi/medvlm"
+Repository = "https://github.com/AKMessi/medvlm"
+Issues = "https://github.com/AKMessi/medvlm/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
