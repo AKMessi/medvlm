@@ -20,6 +20,8 @@ Author: [Aaryan Kakad](https://github.com/AKMessi)
 - Optional pathology-weighted focal loss and balanced sampler for rare findings.
 - Attention-map utilities and notebook-derived result summaries.
 
+For a full intuition-first walkthrough of the model internals, read [architecture.md](architecture.md).
+
 ## Notebook Results
 
 These numbers are copied from the saved notebook output and should be read as exploratory validation checks, not clinical benchmark claims.
@@ -48,6 +50,7 @@ The old notebook used a few presentation figures with optimistic labels. This re
 |-- notebooks/                   # Original exploratory notebook
 |-- scripts/                     # Train, evaluate, and Gradio demo entrypoints
 |-- src/medvlm/                  # Reusable package code
+|-- architecture.md              # End-to-end architecture explanation
 `-- tests/                       # Lightweight smoke tests
 ```
 
